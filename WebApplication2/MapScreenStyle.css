@@ -1,0 +1,401 @@
+﻿body {
+  white-space: nowrap;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  font-family:Arial;
+  text-align:left;
+}
+
+#sideToolbarDiv {
+  width: 38px;
+  position: fixed;
+  float: left;
+  background-color: rgba(0,0,0,0);
+  z-index: 2;
+}
+
+.sideToolBarButton {
+  height: 32px;
+  width: 32px;
+  margin: 3px;
+  float: left;
+  border: ridge;
+  border-width: 1px;
+  background-color: ghostwhite;
+}
+
+.sideToolBarImage {
+  width: 32px;
+  margin: 3px;
+  position: relative;
+  float: left;
+  display: inline-block;
+}
+
+#assetGridUpdatePanelDiv {
+  float: left;
+  overflow: auto;
+  height: 100%;
+  display: inline-block;
+  padding: 3px;
+}
+
+#adminToolsDiv {
+  float: right;
+  overflow: auto;
+  display: none;
+  background-color: ghostwhite;
+}
+
+.adminToolItem {
+  float: left;
+  display: inline-block;
+  margin: 5px;
+}
+
+#assetVehiclePanelDiv {
+  float: left;
+  display: inline-block;
+  overflow: auto;
+  height: 50%;
+}
+
+#assetDetailsGridDiv {
+  float: left;
+  display: inline-block;
+  overflow: auto;
+  height: 50%;
+}
+
+#assetGridToolsDiv {
+  display: inline-block;
+  float: left;
+  overflow: hidden;
+  margin: 3px;
+}
+
+
+#divMap {
+  display: inline-block;
+  float:left;
+  margin:0;
+  padding:0;
+}
+
+#divMapContainer {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+}
+
+#assetPanelResizeDiv {
+  border-left-style: solid;
+  border-left-width: 4px;
+  border-left-color: darkgrey;
+  visibility: visible;
+  display: inline-block;
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+
+#assetPanelResizeDiv:hover {
+  cursor: col-resize;
+}
+
+#assetGridCSS {
+  height: 50%;
+}
+
+#assetGridTableDiv {
+  display: inline-block;
+  float: left;
+  overflow: hidden;
+  background-color:ghostwhite;
+
+}
+
+#assetGridTable {
+  display: inline-block;
+  float: left;
+  overflow: auto;
+  border-style: solid;
+  border-width: 1px;
+  border-color: darkgrey;
+  height: 50%;
+  width: 100%;
+  margin-right: 3px;
+  margin-left: 3px;
+  margin-bottom: 3px;
+}
+
+#assetDetailsTable {
+  display: inline-block;
+  float: left;
+  overflow: auto;
+  border-style: solid;
+  border-width: 1px;
+  border-color: darkgrey;
+  width: 100%;
+  margin-right: 3px;
+  margin-left: 3px;
+  margin-top: 3px;
+}
+
+  #assetDetailsTable th {
+    border-bottom: 1px solid #ddd;
+    margin: 3px;
+    padding: 5px;
+    text-decoration: underline;
+  }
+
+  #assetDetailsTable td {
+    border-bottom: 1px solid #ddd;
+    margin: 3px;
+    padding: 5px;
+  }
+
+  #assetGridTable tr:hover {
+    cursor: pointer;
+    text-decoration: underline;
+  }
+
+  #assetGridTable th {
+    border-bottom: 1px solid #ddd;
+    margin: 3px;
+    padding: 5px;
+    text-decoration: underline;
+  }
+
+  #assetGridTable td {
+    border-bottom: 1px solid #ddd;
+    margin: 3px;
+    padding: 5px;
+  }
+  .selectedAssetRow{
+    background-color:lightgray;
+  }
+
+#EnableTrackingCheckbox{
+  display:inline-block;
+  float:left;
+}
+
+.keepInViewClass {
+  cursor: pointer;
+  float: left;
+  text-align: center;
+  display: inline-block;
+  margin: 3px;
+}
+
+.topToolDivClass {
+  float: left;
+  display: inline-block;
+  margin: 3px;
+  width: 100%;
+}
+
+.showTraceClass {
+  cursor: pointer;
+  float: left;
+  text-align: center;
+  display: inline-block;
+  margin: 3px;
+}
+
+#queryFiltersPanelDiv {
+  float: left;
+  overflow: hidden;
+  display: none;
+  background-color: ghostwhite;
+  border-style: solid;
+  border-width: 1px;
+  border-color: darkgrey;
+}
+
+#queryResultsPanelDiv {
+  overflow: hidden;
+  display: none;
+  float: left;
+  background-color: ghostwhite;
+  padding: 0;
+  margin: 0;
+  border-style: solid;
+  border-width: 1px;
+  border-color: darkgrey;
+}
+
+#queryResultsToolsDiv {
+  overflow: hidden;
+  display: inline-block;
+  float: left;
+  background-color: ghostwhite;
+  padding: 3px;
+  margin: 0;
+  height: 100%;
+  width: 80px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: darkgrey;
+}
+
+#leftResizeDiv {
+  float: left;
+  display: inline-block;
+  height: 100%;
+  width: 6px;
+  background-color: darkgray;
+  cursor: col-resize;
+}
+
+#bottomResizeDiv {
+  display: inline-block;
+  float: left;
+  height: 6px;
+  width: 100%;
+  background-color: darkgray;
+  cursor: row-resize;
+}
+
+.queryResultsTools {
+  float: left;
+  display: inline-block;
+  width: 100%;
+  margin-left: 3px;
+  margin-right: 3px;
+  margin-top: 1px;
+  margin-bottom: 1px;
+}
+
+#queryResultsTableDiv {
+  overflow: auto;
+  display: inline-block;
+  float: left;
+  background-color: ghostwhite;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  border-style: solid;
+  border-width: 1px;
+  border-color: darkgrey;
+}
+
+.queryFiltersSubDivs {
+  overflow: auto;
+  display: inline-block;
+  float: left;
+  width:100%;
+  height: 25%;
+  border-style: solid;
+  border-width: 1px;
+  border-color: darkgrey;
+  padding: 1px;
+}
+
+.queryFiltersTable td {
+  border-bottom: 1px solid #ddd;
+  margin: 3px;
+  padding: 5px;
+}
+
+.queryFiltersTable th {
+  border-bottom: 1px solid #ddd;
+  margin: 3px;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.hiddenData {
+  display: none;
+}
+
+.queryResultsTable td {
+  border-bottom: 1px solid #ddd;
+  margin: 3px;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.queryResultsTable th {
+  border-bottom: 1px solid #ddd;
+  margin: 3px;
+  padding: 5px;
+}
+
+#queryResultsTools{
+  float:left;
+  overflow:auto;
+}
+
+/*Divs for loading bars*/
+#loadContainerDiv {
+  width: 100%;
+  height: 100%;
+  display: none;
+  z-index: 5;
+  align-items: center;
+  justify-content: center;
+  
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  text-align: center;
+
+    
+}
+#queryResultsLoadingBarDiv {
+  width: 50%;
+  height: 20px;
+  border: 1px solid #2980b9;
+  border-radius: 3px;
+  background-image: repeating-linear-gradient( -45deg, #2980b9, #2980b9 11px, #eee 10px, #eee 20px /* determines size */
+  );
+  background-size: 28px 28px;
+  animation: move .5s linear infinite;
+}
+
+@keyframes move {
+  0% {
+    background-position: 0 0;
+  }
+
+  100% {
+    background-position: 28px 0;
+  }
+}
+
+#alertScreenDiv {
+  float: left;
+  overflow: hidden;
+  z-index: 3;
+  display: none;
+  background-color: ghostwhite;
+  border-style: solid;
+  border-width: 1px;
+  border-color: darkgrey;
+  width: 100%;
+  height: 100%
+}
+
+#alertValuesTable {
+  width: 100%;
+
+}
+
+.grader {
+  background-image: url('Images/VehicleIcons/32x32/Grader_Yellow.png');
+  background-size: cover;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.mapboxgl-popup {
+  max-width: 400px;
+  font: 12px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
+}
